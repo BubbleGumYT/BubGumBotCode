@@ -1,6 +1,6 @@
 module.exports = {
 
-    name: 'github',
+    name: 'code',
     description: 'gives you the link to github',
     async execute(message, Discord, client, args){
               
