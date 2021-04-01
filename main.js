@@ -44,6 +44,8 @@ client.on('message', message=>{
         client.commands.get('info').execute(message, args, Discord);
     } else if (command === 'commands'){
         client.commands.get('commands').execute(message, args, Discord);
+    } else if (command === 'github'){
+        client.commands.get('github').execute(message, args, Discord);
     }
 });
 
