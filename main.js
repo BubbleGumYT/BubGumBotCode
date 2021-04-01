@@ -38,7 +38,7 @@ client.on('message', message=>{
 
     if(command === 'hi'){
         client.commands.get('hi').execute(message, args);
-    } else if (command === 'reaction'){
+    } else if (command === 'reactions'){
         client.commands.get('reaction roles').execute(message, args, Discord);
     } else if (command === 'info'){
         client.commands.get('info').execute(message, args, Discord);
