@@ -3,7 +3,7 @@ module.exports = {
 
     name: 'code',
     description: 'gives you the link to github',
-    async execute(message, Discord, client, args){
+    async execute(message, args, Discord, client){
               
 
         let embed = new Discord.MessageEmbed()

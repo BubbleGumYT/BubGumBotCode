@@ -3,7 +3,7 @@ module.exports = {
 
     name: 'commands',
     description: 'commands in use',
-    async execute(message, Discord, client, args){
+    async execute(message, args, Discord, client){
               
 
         let embed = new Discord.MessageEmbed()

@@ -1,7 +1,7 @@
 module.exports.execute = {
     name: 'reactionrole',
     description: "Sets up a reaction role message!",
-    async execute(message, Discord, client, args) {
+    async execute(message, args, Discord, client) {
         const channel = '816700662414049292';
         const Announcement = message.guild.roles.cache.find(role => role.name === "Announcement");
         const commandhelper = message.guild.roles.cache.find(role => role.name === "Command Helper");
