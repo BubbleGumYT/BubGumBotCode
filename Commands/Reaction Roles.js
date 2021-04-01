@@ -1,5 +1,5 @@
 module.exports.execute = {
-    name: 'reaction',
+    name: 'reactionrole',
     description: "Sets up a reaction role message!",
     async execute(message, Discord, client, args) {
         const channel = '816700662414049292';

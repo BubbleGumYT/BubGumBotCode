@@ -44,8 +44,6 @@ client.on('message', message=>{
         client.commands.get('info').execute(message, args, Discord);
     } else if (command === 'commands'){
         client.commands.get('commands').execute(message, args, Discord);
-    }else if (command === 'report'){
-        client.commands.get('report').execute(message, args, Discord);
     }
 });
 
