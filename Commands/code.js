@@ -1,3 +1,4 @@
+
 module.exports = {
 
     name: 'code',
@@ -5,7 +6,7 @@ module.exports = {
     async execute(message, Discord, client, args){
               
 
-        let embed = new Discord.embed()
+        let embed = new Discord.MessageEmbed()
         .setColor('#1ed700')
         .setTitle('GitHub Page link')
         .setDescription('\n'
