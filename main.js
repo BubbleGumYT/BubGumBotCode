@@ -38,7 +38,7 @@ client.on('message', message=>{
 
     if(command === 'hi'){
         client.commands.get('hi').execute(message, args);
-    } else if (command === 'reactions'){
+    } else if (command === 'reaction'){
         client.commands.get('reaction roles').execute(message, args, Discord);
     } else if (command === 'info'){
         client.commands.get('info').execute(message, args, Discord);
@@ -46,6 +46,8 @@ client.on('message', message=>{
         client.commands.get('commands').execute(message, args, Discord);
     } else if (command === 'code'){
         client.commands.get('code').execute(message, args, Discord);
+    } else if (command === 'report'){
+        client.commands.get('report').execute(message, args, Discord);
     }
 });
 
