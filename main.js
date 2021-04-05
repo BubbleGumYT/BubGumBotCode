@@ -23,13 +23,6 @@ client.on('ready', () => {
     memberCount(client)
 });
 
-client.on('guildMemberAdd', guildmember =>{
-    let welcomerole = guildmember.guild.roles.cache.find(role => role.name === 'Member');
-
-    guildmember.roles.add(welcomerole);
-    guildmember.guild.channels.cache.get('816949158056820746').send(`Welcome <@${guildmember.user.id}>, \n We are a server dedicated to the Bub Gum bot and we just ask for a helping hand! Any suggestions on code help, bot command suggestions, or even suggestions for the server go in the suggestion category. Thank you for joining us on this project!`)
-});
-
 client.on('message', message=>{
     if(!message.content.startsWith(prefix) || message.author.bot) return;
 
